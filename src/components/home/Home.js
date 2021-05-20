@@ -6,7 +6,7 @@ import CardProduct from "../card/CardProduct";
 import Container from "@material-ui/core/Container";
 
 const Home = () => {
-  const listItems = useSelector((store) => store.items.array);
+  const listItems = useSelector((store) => store.items.array); //Redux: Store => get all the items's list in "data.json"
 
   return (
     <>

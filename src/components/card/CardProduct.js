@@ -5,7 +5,8 @@ import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
-import Chip from '@material-ui/core/Chip';
+import Chip from "@material-ui/core/Chip";
+import Grid from "@material-ui/core/Grid";
 import stylesApp from "../../styles/appStyles";
 
 // This is a Component used to show the product's info
@@ -22,14 +23,10 @@ export default function CardProduct(props) {
   return (
     <Card className={classes.root}>
       <CardActionArea>
-        <Box 
-          borderRadius={16} 
-          boxShadow={hovered ? 3 : 3} 
-          p={0.5} 
-          >
+        <Box borderRadius={16} boxShadow={hovered ? 0 : 3} p={0.5}>
           <CardMedia
             component="img"
-            alt={`IMAGE: ${props.item.name}`}
+            alt={`Image of: ${format(props.item.name)}`}
             height="180"
             image={props.item.image}
             title={format(props.item.name)}
@@ -39,18 +36,25 @@ export default function CardProduct(props) {
             style={{
               transform: `${hovered ? "scale(1.1,1.1)" : "scale(1,1)"}`,
             }}
-            //border={hovered ? 1 : 0}
           />
         </Box>
       </CardActionArea>
       <CardContent>
-        <Typography gutterBottom variant="h5" component="h3">
-          {!isNaN(props.item.price) ? (
-            <b>₡{props.item.price}</b>
-          ) : (
-            <b>₡{props.item.new_price}</b>
-          )}
-        </Typography>
+        <Grid
+          container
+          direction="row"
+          justify="space-between"
+          alignItems="center"
+        >
+          <Typography gutterBottom variant="h5" component="h3">
+            {!isNaN(props.item.price) ? (
+              <b>₡{props.item.price}</b>
+            ) : (
+              <b>₡{props.item.new_price}</b>
+            )}
+          </Typography>
+          <Chip color="secondary" size="small" label="Nuevo" />
+        </Grid>
         <Typography variant="body2" component="p">
           {format(props.item.name)}
         </Typography>

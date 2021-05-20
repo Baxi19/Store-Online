@@ -16,12 +16,12 @@ export const theme = createMuiTheme({
       dark: "#56349e",
     },
     secondary: {
-      main: "#5680e9",
-      dark: "#0054b6",
+      dark: "#28B401",
+      main: "#008300",
     },
     success: {
-      dark: "#008300",
-      main: "#28B401",
+      main: "#5680e9",
+      dark: "#0054b6",
     },
     error: {
       dark: "#D32F2F",

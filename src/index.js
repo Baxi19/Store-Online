@@ -7,6 +7,7 @@ import { Provider } from "react-redux";
 import generateStore from "./redux/store";
 import Home from "./components/home/Home";
 
+// When you open the app, you can go to http://localhost:3000 or http://localhost:3000/home
 ReactDOM.render(
   <Provider store={generateStore()}>
     <MuiThemeProvider theme={theme}>
