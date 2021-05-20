@@ -10,7 +10,7 @@ const Header = () => {
   const classes = useStyles();
   return (
     <>
-      <AppBar >
+      <AppBar>
         <Toolbar>
           <IconButton
             edge="start"
@@ -30,9 +30,6 @@ const Header = () => {
 };
 
 const useStyles = makeStyles((theme) => ({
-    root: {
-      flexGrow: 1,
-    },
     menuButton: {
       marginRight: theme.spacing(2),
     },

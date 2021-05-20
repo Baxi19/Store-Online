@@ -2,7 +2,7 @@ import data from './data.json';
 
 //******************************CONSTANTS******************************
 const initialData = {
-  array: [],
+  array: data,
 };
 
 //******************************TYPES******************************
@@ -27,11 +27,11 @@ export default function itemsReducer(state = initialData, action) {
 export const getItemsInfoActions = () => async (dispatch, getState) => {
   try {
     //Usually I used axios here to get data from Endpoint..
-    //const { array } = getState().items;
+    const { array } = getState().items;
     dispatch({
       type: GET_ITEMS_INFO,
       payload: {
-        array: data,
+        array: array,
       },
     });
   } catch (error) {
