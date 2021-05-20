@@ -1,5 +1,6 @@
 import { createMuiTheme } from "@material-ui/core/styles";
 
+// Custom theme
 export const theme = createMuiTheme({
   typography: {
     fontFamily: "Roboto",

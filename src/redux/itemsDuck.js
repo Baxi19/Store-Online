@@ -1,4 +1,12 @@
 import data from './data.json';
+// Redux Ducks
+/* 
+Ducks es una forma de modularizar partes de una aplicación de Redux juntando reducers, 
+tipos de acciones y creadores de acciones juntos de una forma fácil de entender y portar.
+El nombre del formato (ducks) viene de la pronunciación de la última sílaba de Redux en inglés.
+
+Ahorita se esta trabajando con un dummy pero es muy normal utilizar la combinacion de React & Redux
+*/
 
 //******************************CONSTANTS******************************
 const initialData = {
@@ -26,7 +34,7 @@ export default function itemsReducer(state = initialData, action) {
 //Action to get item's list
 export const getItemsInfoActions = () => async (dispatch, getState) => {
   try {
-    //Usually I used axios here to get data from Endpoint..
+    //Usually I used axios here to get data from Endpoint, but now only will return the same array values
     const { array } = getState().items;
     dispatch({
       type: GET_ITEMS_INFO,
