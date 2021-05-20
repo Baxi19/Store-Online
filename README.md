@@ -9,7 +9,7 @@
 
 #### <div align="center">Tablet :octocat:</div>
 <div class="row" align="center">
-  <img src="./docs/tablet.jpeg" width="384" height="1024" />
+  <img src="./docs/tablet.jpeg" width="384" height="512" />
 </div>
 
 #### <div align="center">Mobile :fire: !!</div>
