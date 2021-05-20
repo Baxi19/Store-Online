@@ -5,7 +5,7 @@ export const stylesApp = makeStyles((theme) => ({
   // Cards
   root: {
     maxWidth: 200,
-    height: 320,
+    height: 280,
     float: "left",
     padding: "16px",
     margin: "16px",
