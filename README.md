@@ -2,17 +2,17 @@
 ### <div align="center">Demo de la App :fire: !!</div>
 
 
-#### Desktop
+#### <div align="center">Desktop :computer:</div>
 <div class="row" align="center">
-  <img src="./docs/web.jpeg" width="1366" height="768" />
+  <img src="./docs/web.jpeg" width="960" height="540" />
 </div>
 
-#### Tablet
+#### <div align="center">Tablet :octocat:</div>
 <div class="row" align="center">
-  <img src="./docs/tablet.jpeg" width="768" height="1024" />
+  <img src="./docs/tablet.jpeg" width="384" height="1024" />
 </div>
 
-#### Mobile
+#### <div align="center">Mobile :fire: !!</div>
 <div class="row" align="center">
   <img src="./docs/mobile.jpeg" width="320" height="568" />
 </div>
