@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Card from "@material-ui/core/Card";
+//import Card from "@material-ui/core/Card";
 import CardActionArea from "@material-ui/core/CardActionArea";
 import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
@@ -24,7 +24,7 @@ export default function CardProduct(props) {
   const onMediaFallback = event => event.target.src = 'https://i0.wp.com/elfutbolito.mx/wp-content/uploads/2019/04/image-not-found.png?ssl=1';
 
   return (
-    <Card className={classes.root}>
+    <div className={classes.root}>
       <CardActionArea>
         <Box borderRadius={16} boxShadow={hovered ? 0 : 3} p={0.5}>
           <CardMedia
@@ -63,6 +63,6 @@ export default function CardProduct(props) {
           {format(props.item.name)}
         </Typography>
       </CardContent>
-    </Card>
+    </div>
   );
 }
