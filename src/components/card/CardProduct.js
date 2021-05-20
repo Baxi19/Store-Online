@@ -20,6 +20,8 @@ export default function CardProduct(props) {
     return str.slice(0, 1).toUpperCase().concat(str.slice(1).toLowerCase());
   };
 
+  const onMediaFallback = event => event.target.src = 'https://i0.wp.com/elfutbolito.mx/wp-content/uploads/2019/04/image-not-found.png?ssl=1';
+
   return (
     <Card className={classes.root}>
       <CardActionArea>
@@ -33,6 +35,7 @@ export default function CardProduct(props) {
             className={classes.img}
             onMouseOut={() => setHover(false)}
             onMouseOver={() => setHover(true)}
+            onError={onMediaFallback}
             style={{
               transform: `${hovered ? "scale(1.1,1.1)" : "scale(1,1)"}`,
             }}
