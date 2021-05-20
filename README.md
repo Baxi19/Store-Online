@@ -4,7 +4,7 @@
 
 #### <div align="center">Desktop :computer:</div>
 <div class="row" align="center">
-  <img src="./docs/web.jpeg" width="960" height="540" />
+  <img src="./docs/web.jpeg" width="960" height="500" />
 </div>
 
 #### <div align="center">Tablet :octocat:</div>
@@ -30,7 +30,7 @@ Command To start the project :rocket: :rocket:
 npm start
 ```
 
-## Then when compiling you can view the page in one of the following paths :newspaper: :point_down:
+Then when compiling you can view the page in one of the following paths :newspaper: :point_down:
 ```
 http://localhost:3000
 http://localhost:3000/home
