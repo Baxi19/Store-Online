@@ -16,8 +16,8 @@ export default function CardProduct(props) {
   //Input: String
   //Output: First letter in uppercase and the rest in lowercase
   const format = (str) => {
-    return str.slice(0, 1).toUpperCase().concat(str.slice(1).toLowerCase());
-  };
+    return str.trim().slice(0,1).toUpperCase().concat(str.trim().slice(1).toLowerCase());
+  }
 
   // if Image don't exist, will load a default image
   const onMediaFallback = event => event.target.src = 'https://i0.wp.com/elfutbolito.mx/wp-content/uploads/2019/04/image-not-found.png?ssl=1';
