@@ -1,4 +1,4 @@
-# Ingo Store :octocat:
+# Store :octocat:
 ### <div align="center">Demo de la App :fire: !!</div>
 
 
